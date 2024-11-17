@@ -1,8 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 import {Auth} from '../Config/Firebase.config'
 import { createUserWithEmailAndPassword,GoogleAuthProvider,onAuthStateChanged,signInWithEmailAndPassword,signInWithPopup,signOut,updateProfile} from "firebase/auth"
-
 import { toast } from "sonner";
+
 
 
 export const AuthContext = createContext('')
@@ -25,11 +25,11 @@ const AuthProvider = ({children})=>{
 
 
 
-   const CreateUsers = ()=>{
+   const CreateUsers = (email, password)=>{
       return createUserWithEmailAndPassword(Auth, email, password)
    }
 
-   const SignInUsers = ()=>{
+   const SignInUsers = (email,password)=>{
       return signInWithEmailAndPassword(Auth, email, password)
    }
 
@@ -39,24 +39,20 @@ const AuthProvider = ({children})=>{
         return;
     }
      updateProfile(Auth.currentUser, { displayName: name, photoURL: photo})
-     .then(() =>{
-        toast.success('Profile Updated Successfully')
-      })
-      .catch((err) => {
-        toast.error(err)
-      })
+     
    }
 
    const SignOutUsers = ()=>{
-       signOut(Auth)
-       .then(()=>{
+     signOut(Auth)
+      .then(()=>{
+    
+        setUser(null);
         toast.success('Logged Out Successfully')
-        setUser(null)
-       
        })
        .catch((err)=> {
         toast.error(err)
        })
+       
    }
 
 
@@ -88,7 +84,8 @@ const AuthProvider = ({children})=>{
         UpdateProfile,
         SignOutUsers,
         googleSignIn,
-        setIsloading
+        setIsloading,
+        
 
     }
 

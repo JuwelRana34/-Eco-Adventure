@@ -9,7 +9,7 @@ if (!user) {
 
 }
   return (
-   {children}
+   children
   )
 }
 
