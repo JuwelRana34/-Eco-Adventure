@@ -24,7 +24,7 @@ function PasswordReset() {
     })
     }
   return (
-    <div className=' mt-10 w-1/2 mx-auto space-y-4'>
+    <div className=' mt-10 px-2 md:w-1/2 mx-auto space-y-4'>
       Password Your Reset 
       {/* <p>Email: {param.get('email')}</p> */}
       <form onSubmit={handelResetPass} className=' space-y-3'>

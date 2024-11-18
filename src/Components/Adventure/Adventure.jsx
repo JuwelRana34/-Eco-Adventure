@@ -5,7 +5,7 @@ function Adventure({adventuredata}) {
     const { adventureTitle, image ,ecoFriendlyFeatures ,id} = adventuredata
   return (
     <div>
-<div className="card  overflow-hidden card-compact bg-base-100 h-[370px]  shadow-xl">
+<div className="card  overflow-hidden card-compact bg-base-100 h-[400px]  shadow-xl">
   {/* <figure> */}
     <img 
     className=" rounded-t-xl  object-center hover:scale-110 transition-all h-[200px]"

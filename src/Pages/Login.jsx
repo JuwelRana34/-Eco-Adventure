@@ -72,7 +72,7 @@ const navigate = useNavigate()
         <input onChange={(e)=> setEmail(e.target.value)}   type="text" required className="grow" name="email" placeholder="Email" />
       </label>
 
-      <label className="input input-bordered flex items-center gap-2">
+      <label className="input  input-bordered flex items-center gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
@@ -93,15 +93,21 @@ const navigate = useNavigate()
         <div onClick={handelPassIcon}>{isvisible? <FaRegEye /> :<FaRegEyeSlash /> }</div>
       </label>
 
-      <Link to={`/passwordReset?email=${(email)}`} className=" underline text-blue-500" > Forget Password</Link>
+<div>
+   <Link to={`/passwordReset?email=${(email)}`} className="   text-blue-500" > Forget Password?</Link>
+</div>
+     
       <button className="btn btn-primary block w-full mx-auto">Login</button>
       </form>
+      
       <div className=" w-full  flex justify-center">
         <button className="border text-xl font-semibold text-gray-600 capitalize flex  items-center gap-3 rounded-lg my-5 py-2 px-3" onClick={login}> 
           <img className="w-7" src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="" srcset="" />
-           google login</button>
+          login with google </button>
       </div>
-      <div className=" text-center   rounded-lg ">  <Link to='/registration' className=" btn w-full ">Registration</Link> </div>
+      
+      {/* <div className=" text-center   rounded-lg ">  <Link to='/registration' className=" btn w-full ">Registration</Link> </div> */}
+      <p className=" capitalize text-center font-semibold">you have't account? <Link to='/registration' className="text-blue-500 ">registration</Link></p>
     </div>
   );
 }

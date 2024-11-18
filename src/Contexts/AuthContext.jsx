@@ -45,9 +45,9 @@ const AuthProvider = ({children})=>{
    const SignOutUsers = ()=>{
      signOut(Auth)
       .then(()=>{
-        <Navigate to={'/'}></Navigate>
+        setIsloading(false)
         setUser(null);
-        toast.success('Logged Out Successfully')
+        toast.warning('Logged Out Successfully')
        })
        .catch((err)=> {
         toast.error(err)

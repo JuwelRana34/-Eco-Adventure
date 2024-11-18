@@ -2,7 +2,7 @@
     {
       "id": 1,
       "adventureTitle": "Sundarbans Mangrove Safari",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWcbuhrwp7FjS2Irvl2e7OVyHjFsHuOnzOQ&s",
+      "image": "https://images.pexels.com/photos/29435756/pexels-photo-29435756/free-photo-of-giraffes-in-samburu-national-reserve-kenya.jpeg?auto=compress&cs=tinysrgb&w=400",
       "categoryName": "Wildlife Adventures",
       "shortDescription": "Explore the largest mangrove forest and home of the majestic Bengal tiger.",
       "adventureCost": 1500,
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "adventureTitle": "Cox’s Bazar Beach Camping",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXkw7IzYsiqWuW-mXKHTy2Z5rfwe9ODCY4g&s",
+      "image": "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=400",
       "categoryName": "Beach Adventures",
       "shortDescription": "Camp under the stars on the world’s longest sea beach.",
       "adventureCost": 1200,
@@ -34,7 +34,7 @@
     {
       "id": 3,
       "adventureTitle": "Saint Martin’s Coral Snorkeling",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf8exLIw71NGYvd3e7lpP65zNz4woApYsNDw&s",
+      "image": "https://images.pexels.com/photos/1645028/pexels-photo-1645028.jpeg?auto=compress&cs=tinysrgb&w=400",
       "categoryName": "Underwater Adventures",
       "shortDescription": "Snorkel in the crystal-clear waters of Saint Martin’s Island.",
       "adventureCost": 2000,
@@ -50,7 +50,7 @@
     {
       "id": 4,
       "adventureTitle": "Bandarban Hill Trekking",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqwQDFlwTx5Ijt5r3HxHaKvT4bAt0i06QKkQ&s",
+      "image": "https://images.pexels.com/photos/3669288/pexels-photo-3669288.jpeg?auto=compress&cs=tinysrgb&w=400",
       "categoryName": "Hiking and Trekking",
       "shortDescription": "Trek through scenic hills and waterfalls of Bandarban.",
       "adventureCost": 1800,
@@ -66,7 +66,7 @@
     {
       "id": 5,
       "adventureTitle": "Srimangal Tea Garden Cycling",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqaDdLziFvLz9n3P5wS1Nvg3Dt8y5OGevgkQ&s",
+      "image": "https://images.pexels.com/photos/1118438/pexels-photo-1118438.jpeg?auto=compress&cs=tinysrgb&w=400",
       "categoryName": "Cycling Adventures",
       "shortDescription": "Cycle through lush tea gardens and enjoy scenic beauty.",
       "adventureCost": 800,
@@ -82,7 +82,7 @@
     {
       "id": 6,
       "adventureTitle": "Ratargul Swamp Forest Boating",
-      "image": "../src/assets/ratergul.jpeg",
+      "image": "https://images.pexels.com/photos/10661607/pexels-photo-10661607.jpeg?auto=compress&cs=tinysrgb&w=400",
       "categoryName": "Nature Adventures",
       "shortDescription": "Discover the unique freshwater swamp forest on a traditional boat.",
       "adventureCost": 1000,
@@ -98,7 +98,7 @@
     {
       "id": 7,
       "adventureTitle": "Paharpur Archaeological Tour",
-      "image": "../src/assets/paharpur.jpeg",
+      "image": "https://images.pexels.com/photos/12284719/pexels-photo-12284719.jpeg?auto=compress&cs=tinysrgb&w=400",
       "categoryName": "Cultural Adventures",
       "shortDescription": "Explore ancient ruins and learn about Bangladesh’s rich heritage.",
       "adventureCost": 600,

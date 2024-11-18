@@ -116,7 +116,7 @@ const googleRegistration = () => {
       <div className=" w-full  flex justify-center">
         <button className="border text-xl font-semibold text-gray-600 capitalize flex  items-center gap-3 rounded-lg my-5 py-2 px-3" onClick={googleRegistration}> 
           <img className="w-7" src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="" srcset="" />
-           google login</button>
+          continue with google</button>
       </div>
       
       </div>
