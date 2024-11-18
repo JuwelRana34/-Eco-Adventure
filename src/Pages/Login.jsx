@@ -8,7 +8,11 @@ import { FaRegEye } from "react-icons/fa";
 function Login() {
   const [isvisible , setIsVisible] = useState(false)
   const {SignInUsers,googleSignIn ,setIsloading} = useContext(AuthContext)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 const navigate = useNavigate()
+
+
 
   // google login 
   const login = () => {
@@ -28,9 +32,8 @@ const navigate = useNavigate()
   const handleLogin = (e) => {
     e.preventDefault()
 
-    const target = e.target
-
-    SignInUsers(target.email.value, target.password.value)
+   
+    SignInUsers(email, password)
      .then(()=>{
       toast.success('Login successful')
       setIsloading(false)
@@ -66,7 +69,7 @@ const navigate = useNavigate()
           <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
           <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
         </svg>
-        <input type="text" required className="grow" name="email" placeholder="Email" />
+        <input onChange={(e)=> setEmail(e.target.value)}   type="text" required className="grow" name="email" placeholder="Email" />
       </label>
 
       <label className="input input-bordered flex items-center gap-2">
@@ -85,12 +88,12 @@ const navigate = useNavigate()
         
 
         
-        <input type={ isvisible? 'text': "password"} required className="grow" name="password" placeholder="Password"/>
+        <input onChange={(e)=> setPassword(e.target.value)} type={ isvisible? 'text': "password"} required className="grow" name="password" placeholder="Password"/>
         
         <div onClick={handelPassIcon}>{isvisible? <FaRegEye /> :<FaRegEyeSlash /> }</div>
       </label>
 
-      <Link className=" underline text-blue-500" to='/'> Forget Password</Link>
+      <Link to={`/passwordReset?email=${(email)}`} className=" underline text-blue-500" > Forget Password</Link>
       <button className="btn btn-primary block w-full mx-auto">Login</button>
       </form>
       <div className=" w-full  flex justify-center">

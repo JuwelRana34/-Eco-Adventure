@@ -1,7 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App'
-import { Errorpage, Home, Login, Registration, UpdateProfile, Userprofile} from '../Utils/Page'
+import { Errorpage, Home, Login, PasswordReset, Registration, UpdateProfile, Userprofile} from '../Utils/Page'
 import PrivetRoutes from '../Components/PrivetRoutes/PrivetRoutes'
+import AdventureDetials from '../Pages/AdventureDetials';
 
 
 const router = createBrowserRouter([
@@ -11,7 +12,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home/>
+                element: <Home/>,
+                
             },
             {
                 path: "/Login",
@@ -28,6 +30,15 @@ const router = createBrowserRouter([
             {
                 path: "/Userprofile",
                 element: <PrivetRoutes> <Userprofile /> </PrivetRoutes>  
+            },
+            {
+                path: "/passwordReset",
+                element: <PasswordReset />   
+            },
+            {
+                path: "/adventureDetials/:id",
+                element: <PrivetRoutes><AdventureDetials /> </PrivetRoutes> ,
+               
             }
         ]
     },

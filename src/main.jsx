@@ -8,9 +8,9 @@ import AuthProvider  from './Contexts/AuthContext'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
     <Toaster position="top-right" richColors />
     <AuthProvider>
+    
      <RouterProvider router={router} />
     </AuthProvider>
     

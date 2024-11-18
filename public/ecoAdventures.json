@@ -2,7 +2,7 @@
     {
       "id": 1,
       "adventureTitle": "Sundarbans Mangrove Safari",
-      "image": "https://example.com/images/sundarbans-safari.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWcbuhrwp7FjS2Irvl2e7OVyHjFsHuOnzOQ&s",
       "categoryName": "Wildlife Adventures",
       "shortDescription": "Explore the largest mangrove forest and home of the majestic Bengal tiger.",
       "adventureCost": 1500,
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "adventureTitle": "Cox’s Bazar Beach Camping",
-      "image": "https://example.com/images/coxs-bazar-camping.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXkw7IzYsiqWuW-mXKHTy2Z5rfwe9ODCY4g&s",
       "categoryName": "Beach Adventures",
       "shortDescription": "Camp under the stars on the world’s longest sea beach.",
       "adventureCost": 1200,
@@ -34,7 +34,7 @@
     {
       "id": 3,
       "adventureTitle": "Saint Martin’s Coral Snorkeling",
-      "image": "https://example.com/images/saint-martins-snorkeling.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf8exLIw71NGYvd3e7lpP65zNz4woApYsNDw&s",
       "categoryName": "Underwater Adventures",
       "shortDescription": "Snorkel in the crystal-clear waters of Saint Martin’s Island.",
       "adventureCost": 2000,
@@ -50,7 +50,7 @@
     {
       "id": 4,
       "adventureTitle": "Bandarban Hill Trekking",
-      "image": "https://example.com/images/bandarban-trekking.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqwQDFlwTx5Ijt5r3HxHaKvT4bAt0i06QKkQ&s",
       "categoryName": "Hiking and Trekking",
       "shortDescription": "Trek through scenic hills and waterfalls of Bandarban.",
       "adventureCost": 1800,
@@ -66,7 +66,7 @@
     {
       "id": 5,
       "adventureTitle": "Srimangal Tea Garden Cycling",
-      "image": "https://example.com/images/srimangal-cycling.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqaDdLziFvLz9n3P5wS1Nvg3Dt8y5OGevgkQ&s",
       "categoryName": "Cycling Adventures",
       "shortDescription": "Cycle through lush tea gardens and enjoy scenic beauty.",
       "adventureCost": 800,
@@ -82,7 +82,7 @@
     {
       "id": 6,
       "adventureTitle": "Ratargul Swamp Forest Boating",
-      "image": "https://example.com/images/ratargul-forest.jpg",
+      "image": "../src/assets/ratergul.jpeg",
       "categoryName": "Nature Adventures",
       "shortDescription": "Discover the unique freshwater swamp forest on a traditional boat.",
       "adventureCost": 1000,
@@ -98,7 +98,7 @@
     {
       "id": 7,
       "adventureTitle": "Paharpur Archaeological Tour",
-      "image": "https://example.com/images/paharpur-tour.jpg",
+      "image": "../src/assets/paharpur.jpeg",
       "categoryName": "Cultural Adventures",
       "shortDescription": "Explore ancient ruins and learn about Bangladesh’s rich heritage.",
       "adventureCost": 600,
@@ -114,7 +114,7 @@
     {
       "id": 8,
       "adventureTitle": "Lalakhal River Kayaking",
-      "image": "https://example.com/images/lalakhal-kayaking.jpg",
+      "image": "../src/assets/lalkhalriver.jpeg",
       "categoryName": "Water Adventures",
       "shortDescription": "Kayak on the emerald waters of the Lalakhal River.",
       "adventureCost": 900,
@@ -130,7 +130,7 @@
     {
       "id": 9,
       "adventureTitle": "Jaflong Stone Collection Tour",
-      "image": "https://example.com/images/jaflong-tour.jpg",
+      "image": "../src/assets/jaflong.jpeg",
       "categoryName": "Nature Adventures",
       "shortDescription": "Experience the scenic beauty and traditional stone collection process.",
       "adventureCost": 700,

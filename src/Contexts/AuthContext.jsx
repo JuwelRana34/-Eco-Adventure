@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import {Auth} from '../Config/Firebase.config'
-import { createUserWithEmailAndPassword,GoogleAuthProvider,onAuthStateChanged,signInWithEmailAndPassword,signInWithPopup,signOut,updateProfile} from "firebase/auth"
+import { createUserWithEmailAndPassword,GoogleAuthProvider,onAuthStateChanged,sendPasswordResetEmail,signInWithEmailAndPassword,signInWithPopup,signOut,updateProfile} from "firebase/auth"
 import { toast } from "sonner";
 
 
@@ -38,14 +38,14 @@ const AuthProvider = ({children})=>{
         toast.error('You are not logged in')
         return;
     }
-     updateProfile(Auth.currentUser, { displayName: name, photoURL: photo})
+    return updateProfile(Auth.currentUser, { displayName: name, photoURL: photo})
      
    }
 
    const SignOutUsers = ()=>{
      signOut(Auth)
       .then(()=>{
-    
+        <Navigate to={'/'}></Navigate>
         setUser(null);
         toast.success('Logged Out Successfully')
        })
@@ -55,18 +55,25 @@ const AuthProvider = ({children})=>{
        
    }
 
+   const RestPassword = (email) => {
+     return sendPasswordResetEmail(Auth , email)
+   }
+
+
 
 
 
    useEffect(()=>{
 
+    
     const Unsubscribe = onAuthStateChanged(Auth , (user)=>{
 
         if (user){
             setUser(user)
             setIsloading(false)
+
         }else{
-            setIsloading(true)
+            setIsloading(false)
         }
     })
 
@@ -85,7 +92,7 @@ const AuthProvider = ({children})=>{
         SignOutUsers,
         googleSignIn,
         setIsloading,
-        
+        RestPassword
 
     }
 

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../Contexts/AuthContext";
+import { toast } from "sonner";
 
 function UpdateProfile() {
   const { UpdateProfile } = useContext(AuthContext);
@@ -11,12 +12,14 @@ function UpdateProfile() {
     UpdateProfile(value.name.value, value.Photo.value)
     .then(() =>{
       toast.success('Profile Updated Successfully')
+      e.target.reset();
+       navigate("/");
     })
     .catch((err) => {
       toast.error(err)
     })
-    navigate("/");
-    e.target.reset();
+   
+    
   };
 
   return (

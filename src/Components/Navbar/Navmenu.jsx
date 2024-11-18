@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { Link, Navigate , useNavigate } from "react-router-dom"
+import { Link, Navigate , NavLink, useNavigate } from "react-router-dom"
 import { AuthContext } from "../../Contexts/AuthContext"
 import userPhoto from '../../assets/user.png'
 import { toast } from "sonner"
@@ -8,20 +8,17 @@ import { toast } from "sonner"
 function Navmenu() {
   const {user, SignOutUsers}= useContext(AuthContext)
     const menu = <>
-     <li><Link to='/'>Home</Link></li>
-     {/* <li><Link to='/Login'>Login</Link></li> */}
-     <li><Link to='/registration'>registration</Link></li>
-     <li><Link to='/UpdateProfile'>Update Profile</Link></li>
-     <li><Link to='/Userprofile'>user profile</Link></li>
+     <li><NavLink to='/'>Home</NavLink></li>
+     <li><NavLink to='/UpdateProfile'>Update Profile</NavLink></li>
+     <li><NavLink to='/Userprofile'>user profile</NavLink></li>
     
     </>
-
-const navigate = useNavigate()
  
 
 const HandelLogOut = () => {
  
-  SignOutUsers()
+  SignOutUsers();
+  
   
 }
     
@@ -58,13 +55,16 @@ const HandelLogOut = () => {
   </div>
   
   <div className="navbar-end">
-
+ <div className="tooltip tooltip-bottom" data-tip={user?.displayName}>
   <div tabIndex={0} role="button" className="btn mx-2 btn-ghost hidden md:block btn-circle avatar">
-        <div className="w-full  rounded-full">
+        <div className="   w-full  rounded-full"  >
           <img
-            alt="Tailwind CSS Navbar component"
+            alt="userPhoto"
             src={user?.photoURL || userPhoto} />
         </div>
+       
+  
+</div>
       </div>
     {user? <button onClick={HandelLogOut} className='btn btn-error text-white'> Log-Out</button>:<Link to='/Login' className='btn  btn-primary'>login</Link> }
     
