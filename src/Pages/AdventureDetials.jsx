@@ -28,7 +28,7 @@ function AdventureDetials() {
 
   const handelModal = () => {
     const currentHours = new Date().getHours()
-    if(currentHours>=10 && currentHours <=20 ){
+    if(currentHours>=10 && currentHours <20 ){
       window.open('https://meet.google.com/', '_blank')
     }else{
       
@@ -43,7 +43,7 @@ function AdventureDetials() {
     <div>
       <div>
         <div
-          className="h-[400px] w-full  overflow-hidden flex relative justify-center items-center rounded-md"
+          className="h-[400px] w-full mt-10  overflow-hidden flex relative justify-center items-center rounded-md"
           style={{
             backgroundImage: `url(${data.image})`,
             backgroundSize: "cover",
@@ -70,7 +70,7 @@ function AdventureDetials() {
 
           <div className=" my-5 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
 
-            <div className=" flex justify-center items-center gap-4 border border-blue-500 rounded-lg p-5">
+            <div className=" flex justify-center items-center gap-4 border border-gray-500 rounded-lg p-5">
              
               <FaPeopleLine className="text-4xl" />
               <span className=" font-semibold">
@@ -79,7 +79,7 @@ function AdventureDetials() {
               </span>
             </div>
 
-            <div className=" flex justify-center items-center gap-4 border border-blue-500 rounded-lg p-5">
+            <div className=" flex justify-center items-center gap-4 border border-gray-500 rounded-lg p-5">
               
               <TbCoinTaka className="text-4xl" />
               <span className=" font-semibold">
@@ -88,7 +88,7 @@ function AdventureDetials() {
               </span>
             </div>
 
-            <div className=" flex justify-center items-center gap-4 border border-blue-500 rounded-lg p-5">
+            <div className=" flex justify-center items-center gap-4 border border-gray-500 rounded-lg p-5">
               
               <MdOutlineWatchLater className="text-4xl" />
               <span className=" font-semibold">

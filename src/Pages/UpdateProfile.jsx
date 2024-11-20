@@ -6,6 +6,7 @@ import { toast } from "sonner";
 function UpdateProfile() {
   const { UpdateProfile } = useContext(AuthContext);
   const navigate = useNavigate();
+
   const handelUpdate = (e) => {
     e.preventDefault();
     const value = e.target;
@@ -23,7 +24,10 @@ function UpdateProfile() {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className=" px-4 md:flex gap-12 my-20 justify-center items-center">
+      <div>
+        <img className="w-64" src="https://img.freepik.com/free-vector/update-concept-illustration_114360-26109.jpg?ga=GA1.1.1974322130.1689523785&semt=ais_hybrid" alt="update-img" srcset="" />
+      </div>
     <form onSubmit={handelUpdate} className="  space-y-2">
       <input
         type="text"

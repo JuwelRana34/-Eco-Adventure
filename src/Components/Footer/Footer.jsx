@@ -28,7 +28,7 @@ function Footer() {
       <Link to= "https://www.linkedin.com/in/md-juwel-rana-14b563204/">
       <FaLinkedin className="text-3xl text-blue-800"/>
       </Link>
-      <Link to="">
+      <Link to="https://instagram.com/juwelrana906?igshid=OGQ5ZDc2ODk2ZA==">
         <FaInstagramSquare className="text-3xl text-rose-600 "/>
       </Link>
     </div>

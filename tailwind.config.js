@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      "Gochi":["Gochi Hand", "cursive"]
+    }
   },
   plugins: [
     require('daisyui'),
