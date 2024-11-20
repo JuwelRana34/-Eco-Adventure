@@ -32,8 +32,8 @@ function AdventureDetials() {
       window.open('https://meet.google.com/', '_blank')
     }else{
       
+      document.getElementById("my_modal_1").showModal();
     }
- document.getElementById("my_modal_1").showModal();
    
   };
 

@@ -14,7 +14,7 @@ function Adventure({ adventuredata }) {
  
   return (
     <div>
-      <div  data-aos={ id % 2 === 0 ?"fade-right":"fade-left"} className="card  overflow-hidden card-compact bg-base-100 h-[400px]  shadow-xl">
+      <div  data-aos={ id % 2 === 0 ?"fade-up":"fade-down"} className="card  overflow-hidden card-compact bg-base-100 h-[400px]  shadow-xl">
         {/* <figure> */}
         <img
           className=" rounded-t-xl  object-center hover:scale-110 transition-all h-[200px]"
