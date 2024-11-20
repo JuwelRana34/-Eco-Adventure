@@ -22,7 +22,7 @@
       "categoryName": "Beach Adventures",
       "shortDescription": "Camp under the stars on the world’s longest sea beach.",
       "adventureCost": 1200,
-      "bookingAvailability": true,
+      "bookingAvailability": false,
       "location": "Cox’s Bazar, Chattogram",
       "duration": "1 night",
       "adventureLevel": "Easy",

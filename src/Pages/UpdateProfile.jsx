@@ -13,7 +13,7 @@ function UpdateProfile() {
     .then(() =>{
       toast.success('Profile Updated Successfully')
       e.target.reset();
-       navigate("/");
+       navigate("/Userprofile");
     })
     .catch((err) => {
       toast.error(err)
