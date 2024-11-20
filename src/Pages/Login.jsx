@@ -7,11 +7,10 @@ import { FaRegEye } from "react-icons/fa";
 
 function Login() {
   const [isvisible , setIsVisible] = useState(false)
-  const {SignInUsers,googleSignIn ,setIsloading} = useContext(AuthContext)
+  const {user,SignInUsers,googleSignIn ,setIsloading} = useContext(AuthContext)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 const navigate = useNavigate()
-
 
 
   // google login 

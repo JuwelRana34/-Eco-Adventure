@@ -105,7 +105,7 @@ const googleRegistration = () => {
               clipRule="evenodd"
             />
           </svg>
-          <input type={ isvisible? 'text': "password"} className="grow" name="password" />
+          <input type={ isvisible? 'text': "password"} className="grow" name="password" placeholder="Password" />
           <div onClick={handelPassIcon}>{isvisible? <FaRegEye /> :<FaRegEyeSlash /> }</div>
         </label>
 

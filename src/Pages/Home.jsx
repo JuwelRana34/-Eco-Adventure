@@ -34,11 +34,14 @@ function Home() {
   return (
     <>
       <Corousel />
-
-      <div className=" py-5 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+      <div className="py-5 mt-10">
+      <h1 className="font-bold text-2xl pl-4 my-5">Adventure Experiences</h1>
+      <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+       
         {visibledatas.map((item) => (
-          <Adventure key={item.id} adventuredata={item} />
+          <Adventure  key={item.id} adventuredata={item} />
         ))}
+      </div>
       </div>
       <div className="text-center ">
         <Link onClick={handelshowbtn} className="btn  text-center" to="/">

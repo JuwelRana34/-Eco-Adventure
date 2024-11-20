@@ -5,7 +5,7 @@ function Corousel() {
     <div className="carousel w-full  h-[400px] md:h-auto">
   <div id="slide1" className="carousel-item h-[400px] relative w-full">
     <img className="w-full object-cover object-center"
-      src="https://images.pexels.com/photos/18974570/pexels-photo-18974570/free-photo-of-deer-in-forest.jpeg?auto=compress&cs=tinysrgb&w=400"
+      src="https://img.freepik.com/free-photo/view-mountain-with-dreamy-aesthetic_23-2151700200.jpg?ga=GA1.1.1974322130.1689523785&semt=ais_hybrid"
        />
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
       <a href="#slide4" className="btn btn-circle">❮</a>
