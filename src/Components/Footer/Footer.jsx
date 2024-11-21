@@ -1,7 +1,7 @@
 import { FaFacebook } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
 function Footer() {
   return (
     <footer className="footer bg-gradient-to-b from-cyan-50 to-cyan-100 mt-5 bg-base-300 text-base-content p-10">
@@ -23,13 +23,13 @@ function Footer() {
     <h6 className="footer-title">Social</h6>
     <div className="grid grid-flow-col gap-4">
       <Link to='https://www.facebook.com/juwel34/' target="_blank">
-        <FaFacebook className="text-3xl text-blue-600"/>
+        <FaFacebook className=" hover:scale-125 transition-all text-3xl text-blue-600"/>
       </Link>
       <Link to= "https://www.linkedin.com/in/md-juwel-rana-14b563204/" target="_blank">
-      <FaLinkedin className="text-3xl text-blue-800"/>
+      <FaLinkedin className=" hover:scale-125 transition-all text-3xl text-blue-800"/>
       </Link>
-      <Link to="https://instagram.com/juwelrana906?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
-        <FaInstagramSquare className="text-3xl text-rose-600 "/>
+      <Link to="https://github.com/JuwelRana34" target="_blank">
+        <IoLogoGithub className=" hover:scale-125 transition-all text-3xl text-gray-800 "/>
       </Link>
     </div>
   </nav>

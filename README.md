@@ -4,7 +4,8 @@
 "Eco-Adventure" offers thrilling and sustainable journeys into the heart of nature, promoting environmental awareness and conservation. Engage in activities like hiking, kayaking, and wildlife observation, all designed to minimize ecological footprints while maximizing the joy of outdoor exploration. so let's start the journey with us !
 
 ## Live URL
-[Eco-Adventure Live](https://b10assign9.web.app/)
+[firebase Live](https://b10assign9.web.app/)
+[netlify Live](https://theworld-tavel.netlify.app/)
 
 ## Key Features
 - **Dynamic Page Titles**: Each route dynamically updates the document title for better user experience.
