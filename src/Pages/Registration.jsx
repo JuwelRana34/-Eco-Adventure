@@ -139,11 +139,11 @@ function Registration() {
             </Link>
           </p>
 
-          <button className="btn btn-primary w-full">Registration</button>
+          <button className="btn  bg-blue-500 hover:bg-blue-600 text-white w-full">Registration</button>
         </form>
         <div className=" w-full  flex justify-center">
           <button
-            className="border text-xl font-semibold text-gray-600 capitalize flex  items-center gap-3 rounded-lg my-5 py-2 px-3"
+            className="border text-md font-semibold text-gray-600 capitalize flex  items-center gap-3 rounded-lg my-5 py-2 px-3"
             onClick={googleRegistration}
           >
             <img

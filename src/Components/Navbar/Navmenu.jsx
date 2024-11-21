@@ -70,25 +70,29 @@ function Navmenu() {
             {menu}
           </ul>
         </div>
-        <Link to={'/'} className="btn text-transparent bg-clip-text bg-gradient-to-l text-base from-orange-500 to-emerald-500 btn-ghost px-1 font-bold  md:text-2xl">Eco-Adventure</Link>
+        <Link to={'/'} className="btn text-transparent bg-clip-text bg-gradient-to-l text-base from-orange-500 to-emerald-500 btn-ghost px-1 font-bold   md:text-2xl">Eco-Adventure</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1  font-semibold">{menu}</ul>
       </div>
 
       <div className="navbar-end">
-        <div className="tooltip tooltip-bottom" data-tip={user?.displayName}>
+
+      {user? <div className="tooltip tooltip-bottom" data-tip={user?.displayName}>
           <div
             tabIndex={0}
             role="button"
             className="btn mx-2 btn-ghost  md:block btn-circle avatar"
           >
-            {user? <div className="   w-full  rounded-full">
+            <div className="   w-full  rounded-full">
               <img alt="userPhoto" src={user?.photoURL || userPhoto} />
-            </div>: ''}
+            </div>
             
           </div>
-        </div>
+        </div> : ''}
+
+
+
         {user ? (
           <button onClick={HandelLogOut} className=" py-3 px-3 rounded-lg bg-red-500 text-white text-xs md:text-base">
             
@@ -99,6 +103,7 @@ function Navmenu() {
             login
           </Link>
         )}
+
       </div>
     </div>
   );

@@ -109,11 +109,11 @@ if(user){
    <Link to={`/passwordReset?email=${(email)}`} className="   text-blue-500" > Forget Password?</Link>
 </div>
      
-      <button className="btn btn-primary block w-full mx-auto">Login</button>
+      <button className="btn bg-blue-500 hover:bg-blue-600 text-white block w-full mx-auto">Login</button>
       </form>
       
       <div className=" w-full  flex justify-center">
-        <button className="border text-lg  font-semibold text-gray-600 capitalize flex  items-center gap-3 rounded-lg my-5 py-2 px-3" onClick={login}> 
+        <button className="border text-md  font-semibold text-gray-600 capitalize flex  items-center gap-3 rounded-lg my-5 py-2 px-3" onClick={login}> 
           <img className="w-7" src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="" srcset="" />
           login with google </button>
       </div>

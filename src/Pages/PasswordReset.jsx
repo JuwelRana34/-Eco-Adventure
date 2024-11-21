@@ -27,7 +27,7 @@ function PasswordReset() {
   return (
     <div className=' mt-10 px-2 md:w-1/2 mx-auto space-y-4'>
       Password Your Reset 
-      {/* <p>Email: {param.get('email')}</p> */}
+      
       <form onSubmit={handelResetPass} className=' space-y-3'>
       <label className="input input-bordered flex items-center gap-2">
   <svg
@@ -43,7 +43,7 @@ function PasswordReset() {
   <input onChange={(e)=> setEmail(e.target.value)} type="text" name="email"  value={email} required className="grow" placeholder="Email" />
 </label>
 
-<button className='btn btn-primary'> Reset password</button>
+<button className='btn  bg-blue-500 hover:bg-blue-600 text-white'> Reset password</button>
         
       </form>
     </div>
