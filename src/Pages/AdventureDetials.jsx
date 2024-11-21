@@ -162,9 +162,11 @@ function AdventureDetials() {
 
         <button
           onClick={handelModal}
-          className=" bg-blue-500 hover:bg-orange-500 text-white py-2 px-4 rounded-lg fixed  bottom-10 right-10"
+          className=" bg-blue-500 animate-bounce hover:bg-orange-500 text-white py-2 px-4 rounded-lg fixed  bottom-10 right-10"
         >
           Talk with Expert
+
+
         </button>
       </div>
 

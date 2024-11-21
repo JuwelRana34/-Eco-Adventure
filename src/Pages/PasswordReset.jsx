@@ -17,6 +17,7 @@ function PasswordReset() {
     RestPassword(email)
     .then(()=>{
             window.location.href = 'https://mail.google.com/mail/u/0/#inbox'
+            
     })
     .catch((err)=>{
         toast.error(err)

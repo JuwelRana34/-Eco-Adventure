@@ -12,6 +12,9 @@ function Login() {
   const [password, setPassword] = useState('')
 const navigate = useNavigate()
 
+if(user){
+  return navigate('/')
+}
 
   // google login 
   const login = () => {

@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 function Footer() {
   return (
-    <footer className="footer mt-5 bg-base-300 text-base-content p-10">
+    <footer className="footer bg-gradient-to-b from-cyan-50 to-cyan-100 mt-5 bg-base-300 text-base-content p-10">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>
@@ -22,13 +22,13 @@ function Footer() {
   <nav>
     <h6 className="footer-title">Social</h6>
     <div className="grid grid-flow-col gap-4">
-      <Link to='https://www.facebook.com/juwel34/'>
+      <Link to='https://www.facebook.com/juwel34/' target="_blank">
         <FaFacebook className="text-3xl text-blue-600"/>
       </Link>
-      <Link to= "https://www.linkedin.com/in/md-juwel-rana-14b563204/">
+      <Link to= "https://www.linkedin.com/in/md-juwel-rana-14b563204/" target="_blank">
       <FaLinkedin className="text-3xl text-blue-800"/>
       </Link>
-      <Link to="https://instagram.com/juwelrana906?igshid=OGQ5ZDc2ODk2ZA==">
+      <Link to="https://instagram.com/juwelrana906?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
         <FaInstagramSquare className="text-3xl text-rose-600 "/>
       </Link>
     </div>

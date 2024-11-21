@@ -70,7 +70,7 @@ function Navmenu() {
             {menu}
           </ul>
         </div>
-        <a className="btn btn-ghost text-lg px-1 md:text-xl">Eco-Adventure</a>
+        <Link to={'/'} className="btn btn-ghost text-sm px-1 md:text-2xl">Eco-Adventure</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1  font-semibold">{menu}</ul>
@@ -81,7 +81,7 @@ function Navmenu() {
           <div
             tabIndex={0}
             role="button"
-            className="btn mx-2 btn-ghost hidden md:block btn-circle avatar"
+            className="btn mx-2 btn-ghost  md:block btn-circle avatar"
           >
             <div className="   w-full  rounded-full">
               <img alt="userPhoto" src={user?.photoURL || userPhoto} />
@@ -89,12 +89,12 @@ function Navmenu() {
           </div>
         </div>
         {user ? (
-          <button onClick={HandelLogOut} className="btn btn-error text-white">
-            {" "}
-            Log-Out
+          <button onClick={HandelLogOut} className=" py-2 px-2 rounded-lg bg-red-500 text-white text-xs md:text-base">
+            
+            LogOut
           </button>
         ) : (
-          <Link to="/Login" className="btn  btn-primary">
+          <Link to="/Login" className="py-2 px-3 rounded-lg bg-blue-500 text-white text-xs md:text-base">
             login
           </Link>
         )}

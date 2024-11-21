@@ -8,9 +8,13 @@ import { FaRegEye } from "react-icons/fa";
 
 function Registration() {
 
-  const { CreateUsers ,UpdateProfile , googleSignIn } = useContext(AuthContext);
+  const { user, CreateUsers ,UpdateProfile , googleSignIn } = useContext(AuthContext);
   const [isvisible , setIsVisible] = useState(false)
 const navigate = useNavigate()
+
+if(user){
+  return navigate('/')
+}
 
   const HandelRegistration = (e) => {
     e.preventDefault();

@@ -2,8 +2,9 @@ import Corousel from "../Components/Carousel/Corousel";
 import { Link } from "react-router-dom";
 import Adventure from "../Components/Adventure/Adventure";
 import { useEffect, useState } from "react";
-
 import Review from "../Components/Review/Review";
+import AboutServices from "../Components/AboutServices/AboutServices";
+
 function Home() {
   const [data, setData] = useState([]);
   const [visibledatas, setVisibledatas] = useState([]);
@@ -61,7 +62,12 @@ function Home() {
             <span className=" font-Gochi text-2xl "> Client Testimonial </span>
             <h1 className="text-4xl font-bold"> Adventure Talks</h1>
           </div>
+          {/* extra 2 section  */}
+
           <Review reviewData={reviewData} />
+          <AboutServices/>
+          {/* extra 2 section end */}
+
         </div>
       </div>
     </>
