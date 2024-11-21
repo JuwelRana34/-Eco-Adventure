@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Contexts/AuthContext";
 import { toast } from "sonner";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
 
@@ -10,6 +10,7 @@ function Login() {
   const {user,SignInUsers,googleSignIn ,setIsloading} = useContext(AuthContext)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const location = useLocation()
 const navigate = useNavigate()
 
 if(user){
@@ -22,7 +23,7 @@ if(user){
     .then(()=>{
       toast.success('login successful')
       setIsloading(false);
-      navigate('/')
+      navigate(location?.state ? location.state :  '/')
    })
    .catch((err)=> {
       toast.error(`${err}`)
@@ -39,7 +40,7 @@ if(user){
      .then(()=>{
       toast.success('Login successful')
       setIsloading(false)
-      navigate('/')
+      navigate(location?.state ? location.state :  '/')
       e.target.reset()
      })
      .catch((err)=> {
