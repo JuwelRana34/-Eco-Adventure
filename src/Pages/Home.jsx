@@ -58,16 +58,14 @@ function Home() {
 
         <div className="mt-16  ">
           <div className=" text-center ">
-            
             <span className=" font-Gochi text-2xl "> Client Testimonial </span>
             <h1 className="text-4xl font-bold"> Adventure Talks</h1>
           </div>
           {/* extra 2 section  */}
 
           <Review reviewData={reviewData} />
-          <AboutServices/>
+          <AboutServices />
           {/* extra 2 section end */}
-
         </div>
       </div>
     </>

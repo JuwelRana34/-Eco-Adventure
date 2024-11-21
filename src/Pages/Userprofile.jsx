@@ -8,7 +8,6 @@ function Userprofile() {
   return (
     <>
       <h1 className=" my-5 text-center mx-auto w-[80%] md:w-1/2 bg-green-500 shadow-lg shadow-green-200 rounded-md py-2 text-xl text-white">
-       
         welcome, <span className="text-sky-950">{user.displayName} </span>
       </h1>
 
@@ -19,8 +18,11 @@ function Userprofile() {
           </div>
         </div>
 
-        <h2 className="font-semibold text-xl">Name: {user.displayName}</h2>
-        <h2> <span className="font-semibold">Email:  </span>   {user.email}</h2>
+        <h2 className="font-semibold text-xl">{user.displayName}</h2>
+        <h2>
+          {" "}
+          <span className="font-semibold"> </span> {user.email}
+        </h2>
         <Link className="btn btn-primary mt-5" to="/UpdateProfile">
           update
         </Link>

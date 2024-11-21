@@ -8,9 +8,9 @@ import { GiMountains } from "react-icons/gi";
 function AboutServices() {
   return (
     <>
-    <div className=' my-10 font-bold text-center'>
- <span className=' font-Gochi text-xl '>Value before business </span>
- <h1 className='text-4xl'>We Offer the best </h1>
+    <div className=' my-10  text-center'>
+ <span className=' font-Gochi text-2xl  '>Value before business </span>
+ <h1 className='text-4xl font-bold'>We Offer the best </h1>
 </div>
     <div className='lg:flex justify-center items-center gap-4'>
    

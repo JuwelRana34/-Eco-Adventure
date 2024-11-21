@@ -47,10 +47,10 @@ function Navmenu() {
     <div className="navbar bg-base-100 container mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn px-3 btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-6 w-6 "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -70,7 +70,7 @@ function Navmenu() {
             {menu}
           </ul>
         </div>
-        <Link to={'/'} className="btn btn-ghost text-sm px-1 md:text-2xl">Eco-Adventure</Link>
+        <Link to={'/'} className="btn text-transparent bg-clip-text bg-gradient-to-l text-base from-orange-500 to-emerald-500 btn-ghost px-1 font-bold  md:text-2xl">Eco-Adventure</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1  font-semibold">{menu}</ul>
@@ -83,18 +83,19 @@ function Navmenu() {
             role="button"
             className="btn mx-2 btn-ghost  md:block btn-circle avatar"
           >
-            <div className="   w-full  rounded-full">
+            {user? <div className="   w-full  rounded-full">
               <img alt="userPhoto" src={user?.photoURL || userPhoto} />
-            </div>
+            </div>: ''}
+            
           </div>
         </div>
         {user ? (
-          <button onClick={HandelLogOut} className=" py-2 px-2 rounded-lg bg-red-500 text-white text-xs md:text-base">
+          <button onClick={HandelLogOut} className=" py-3 px-3 rounded-lg bg-red-500 text-white text-xs md:text-base">
             
             LogOut
           </button>
         ) : (
-          <Link to="/Login" className="py-2 px-3 rounded-lg bg-blue-500 text-white text-xs md:text-base">
+          <Link to="/Login" className="py-3 px-5 rounded-lg bg-blue-500 text-white text-xs md:text-base">
             login
           </Link>
         )}
